@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global_assets/fonts/LineIcons/font-css/LineIcons.css">
+    <link rel="stylesheet" href="./assets/css/horloge.css">
+    <link rel="stylesheet" href="./assets/css/master.css">
+
+    <link rel="shortcut icon" href="../global_assets/favicon.ico" type="image/x-icon">
+    <title>Neumorphisme - Horloge</title>
+</head>
+<body>
+    <main>
+        <div class="mobile-container">
+            <ul class="tab-list">
+                <li class="tab-item">
+                    <a href="#" class="active" data-target="alarm">
+                        <i class="lni lni-alarm-clock"></i>
+                    </a>
+                </li>
+                <li class="tab-item">
+                    <a href="#" data-target="world">
+                        <i class="lni lni-world"></i>
+                    </a>
+                </li>
+                <li class="tab-item">
+                    <a href="#" data-target="timer">
+                        <i class="lni lni-timer"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-contents">
+                <!-- Alarm Tab Content -->
+                <div class="tab-content" id="alarm">
+                    <!-- Clock -->
+                    <div class="clock">
+                        <div class="back-1">
+                            <div class="stick"></div>
+                            <div class="stick"></div>
+                            <div class="stick"></div>
+                            <div class="stick"></div>
+                            <div class="back-2">
+                                <div class="heure"></div>
+                                <div class="minute"></div>
+                                <div class="seconde"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Clock -->
+                    <!-- Alarm list -->
+                    <div class="alarm-list">
+                        <ul>
+                            <li>
+                                <span class="alarm-time">04:00 <em>am</em></span>
+                                <span class="alarm-switch active">
+                                    <button></button>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="alarm-time">05:00 <em>am</em></span>
+                                <span class="alarm-switch">
+                                    <button></button>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Alarm List -->
+                    <button type="button" class="add-alarm">+</button>
+                </div>
+                <!-- World Clock Tab Content -->
+                <div class="tab-content" id="world">
+                    Dans 10
+                </div>
+                <!-- Timer Tab Content -->
+                <div class="tab-content" id="timer">
+                    Dans 3535
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../global_assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/master.js"></script>
+    <script src="./assets/js/horloge.js"></script>
+</body>
+</html>
