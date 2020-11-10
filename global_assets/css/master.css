@@ -1,0 +1,74 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    overflow: hidden;
+}
+
+nav{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+nav .bg-nav{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(.2px) brightness(50%);
+}
+
+.container{
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.container img.profil-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bloc h4.bloc-title{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.bloc{
+    width: calc(100% / 3);
+}
+
+.contacts, .projects{
+    transform: translateX(100px);
+}
+
+.bloc ul{
+    list-style: none;
+    padding: 0;
+}
+
+.bloc ul li{
+    padding: 5px;
+    margin: 10px;
+}
+
+.bloc ul li a{
+    text-decoration: none;
+    color: wheat;
+}
