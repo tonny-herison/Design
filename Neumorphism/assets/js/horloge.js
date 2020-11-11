@@ -12,7 +12,7 @@ $(document).ready(function(){
         
         let rs = s*6 + (is*360) - 90, 
             rm = (m + (s / 60))* 6 + (im*360) - 90, 
-            rh = (h + (s / 3600)) * 15 + (ih * 360) - 180;
+            rh = (h + (m / 60)) * 30 + (ih * 360) - 90;
         sec.css({"transform" : "rotate(" + rs + "deg)"})
         min.css({"transform" : "rotate(" + rm + "deg)"})
         hr.css({"transform" : "rotate(" + rh + "deg)"})
