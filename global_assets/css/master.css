@@ -88,7 +88,7 @@ nav .bg-nav{
 }
 
 .contacts, .projects, .credits{
-    transform: translateX(50px);
+    /* margin-left: 50px; */
 }
 
 .bloc ul{
@@ -198,6 +198,7 @@ nav .bg-nav{
         width: 100%;
         min-height: auto;
         margin-top: 50px;
+        padding-left: 25px;
     }
 }
 

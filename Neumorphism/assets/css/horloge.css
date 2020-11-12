@@ -64,26 +64,30 @@
 .clock.model-1 .back-1 .stick{ background-color: #cd863fa1; }
 .clock.model-2 .back-1 .stick{ background-color: #3f94cda1; }
 
-.clock .back-1 .stick:nth-child(1){
+.clock.model-1 .back-1 .stick:nth-child(1),
+.clock.model-2 .back-1 .stick:nth-child(1){
     top: 0;
     left: calc(50% - 1px);
     rotate: 90deg;
     transform-origin: 0% 100%;
 }
 
-.clock .back-1 .stick:nth-child(2){
+.clock.model-2 .back-1 .stick:nth-child(2),
+.clock.model-1 .back-1 .stick:nth-child(2){
     top: calc(50% - 1px);
     right: 0;
 }
 
-.clock .back-1 .stick:nth-child(3){
+.clock.model-1 .back-1 .stick:nth-child(3),
+.clock.model-2 .back-1 .stick:nth-child(3){
     bottom: 0;
     left: calc(50% + 1px);
     rotate: -90deg;
     transform-origin: 0% 100%;
 }
 
-.clock .back-1 .stick:nth-child(4){
+.clock.model-1 .back-1 .stick:nth-child(4),
+.clock.model-2 .back-1 .stick:nth-child(4){
     top: calc(50% - 1px);
     left: 0;
 }
@@ -100,7 +104,7 @@
     box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #00000030;
 }
 
-.clock .back-2 .circle{
+.clock .circle{
     position: absolute;
     width: 7px;
     height: 7px;
@@ -212,19 +216,32 @@
     font-weight: normal;
 }
 
-.add-alarm{
-    position: absolute;
+.add-alarm, .play-bar span{
     cursor: pointer;
-    bottom: 10px;
-    width: 2.2em;
-    height: 2.2em;
-    font-size: 1.7em;
     color: peru;
     background:  transparent;
     box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #0000003f;
     border: none;
     border-radius: 50%;
+}
+
+.add-alarm{
+    position: absolute;
     margin-left: calc(50% - 1.1em);
+    bottom: 10px;
+    width: 2.2em;
+    height: 2.2em;
+    font-size: 1.7em;
+}
+
+.play-bar span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
 }
 
 .country-time{
@@ -235,4 +252,95 @@
 .country-name{
     font-style: italic;
     opacity: .6;
+}
+
+.clock.model-3{
+    rotate: -90deg;
+}
+
+.clock.model-3 .stick{
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    background: chocolate;
+    transform-origin: 0% 100%;
+}
+
+.clock.model-3 .stick:nth-child(1){ transform: rotate(30deg); }
+.clock.model-3 .stick:nth-child(2){ transform: rotate(60deg); }
+.clock.model-3 .stick:nth-child(3){ transform: rotate(90deg); }
+.clock.model-3 .stick:nth-child(4){ transform: rotate(120deg); }
+.clock.model-3 .stick:nth-child(5){ transform: rotate(150deg); }
+.clock.model-3 .stick:nth-child(6){ transform: rotate(180deg); }
+.clock.model-3 .stick:nth-child(7){ transform: rotate(210deg); }
+.clock.model-3 .stick:nth-child(8){ transform: rotate(240deg); }
+.clock.model-3 .stick:nth-child(9){ transform: rotate(270deg); }
+.clock.model-3 .stick:nth-child(10){ transform: rotate(300deg); }
+.clock.model-3 .stick:nth-child(11){ transform: rotate(330deg); }
+.clock.model-3 .stick:nth-child(12){ transform: rotate(0deg); }
+
+.clock.model-3 .back-2{
+    background: #ffdfc7;
+    box-shadow: none;
+    width: 275px;
+    height: 275px;
+}
+
+.clock.model-3 .aiguille{
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    background: chocolate;
+    transform-origin: 0% 100%;
+    transition: transform 10ms linear;
+}
+
+.clock.model-3 .circle{
+    position: absolute;
+    border: 5px solid chocolate;
+}
+
+.timer-time{
+    text-align: center;
+    opacity: .7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.timer-list ul{
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.timer-list ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    opacity: .7;
+}
+
+.timer-list ul li .timer-title{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.timer-list ul li .timer-value{
+    font-style: italic;
+}
+
+.play-bar{
+    background-image: linear-gradient(transparent, #ffd8bb);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
