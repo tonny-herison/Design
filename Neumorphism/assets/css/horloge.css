@@ -21,11 +21,11 @@
     padding: 10px;
     display: inline-block;
     border-radius: 5px;
-    box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #00000020;
+    box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #00000030;
 }
 
 .tab-list .tab-item a.active{
-    box-shadow: inset -2px -2px 7px #ffffff, inset 2px 2px 7px #00000020;
+    box-shadow: inset -2px -2px 7px #ffffff, inset 2px 2px 7px #00000030;
 }
 
 .tab-content{
@@ -52,15 +52,17 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #00000020;
+    box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #00000030;
 }
 
 .clock .back-1 .stick{
     position: absolute;
     width: 20px;
     height: 2px;
-    background-color: #cd863fa1;
 }
+
+.clock.model-1 .back-1 .stick{ background-color: #cd863fa1; }
+.clock.model-2 .back-1 .stick{ background-color: #3f94cda1; }
 
 .clock .back-1 .stick:nth-child(1){
     top: 0;
@@ -94,18 +96,21 @@
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #00000020;
+    background: #ffffff30;
+    box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #00000030;
 }
 
 .clock .back-2 .circle{
     position: absolute;
     width: 7px;
     height: 7px;
-    background: #c9c9c9;
-    border: 5px solid #9e6700;
+    background: #dfdfdf;
     border-radius: 50%;
     transform: translateY(1px);
 }
+
+.clock.model-1 .back-2 .circle{ border: 5px solid #9e6700; }
+.clock.model-2 .back-2 .circle{ border: 5px solid #007e9e; }
 
 .clock .back-2 .heure,
 .clock .back-2 .minute,
@@ -131,28 +136,33 @@
 .clock .back-2 .seconde{
     width: 150px;
     margin-left: 150px;
-    background: #9e6700;
 }
 
-.alarm-list{
+.clock.model-1 .back-2 .seconde{ background: #9e6700; }
+.clock.model-2 .back-2 .seconde{ background: #007e9e; }
+
+.alarm-list,
+.country-list{
     position: relative;
 }
 
-.alarm-list ul{
+.alarm-list ul,
+.country-list ul{
     position: relative;
     width: 100%;
     list-style: none;
     padding: 0;
 }
 
-.alarm-list ul li{
+.alarm-list ul li,
+.country-list ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 12px;
     margin: 2rem;
     border-radius: 20px;
-    box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #00000020;
+    box-shadow: -3px -3px 10px #ffffff, 3px 3px 10px #00000030;
     width: calc(100% - 5rem);
 }
 
@@ -165,7 +175,7 @@
     border-radius: 50px;
     overflow: hidden;
     background: #00000002;
-    box-shadow: inset -2px -2px 4px #ffffff, inset 2px 2px 4px #00000020;
+    box-shadow: inset -2px -2px 4px #ffffff, inset 2px 2px 4px #00000030;
     transition: all .5s;
 }
 
@@ -177,7 +187,7 @@
     border-radius: 50%;
     background: #fff8ed;
     border: 1px solid #ffc06175;
-    box-shadow: 2px 2px 8px #00000020;
+    box-shadow: 2px 2px 8px #00000030;
     transition: all .3s;
 }
 
@@ -215,4 +225,14 @@
     border: none;
     border-radius: 50%;
     margin-left: calc(50% - 1.1em);
+}
+
+.country-time{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.country-name{
+    font-style: italic;
+    opacity: .6;
 }

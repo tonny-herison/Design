@@ -31,6 +31,11 @@ $(document).ready(function(){
                 im++;
             }
         } else if (s == 59) is++;
+
+        // Timezone World Clock
+        $('.country-list ul li[data-country="Tana"] .country-time').html(moment().tz("Europe/Moscow").format("HH : mm"));
+        $('.country-list ul li[data-country="Paris"] .country-time').html(moment().tz("Europe/Paris").format("HH : mm"));
+        $('.country-list ul li[data-country="Los Angeles"] .country-time').html(moment().tz("America/Los_Angeles").format("HH : mm"));
     }, 1000);
 
 })
