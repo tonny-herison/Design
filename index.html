@@ -2,93 +2,103 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./global_assets/css/master.css">
-
     <link rel="shortcut icon" href="./global_assets/favicon.ico" type="image/x-icon">
-    <title>Défis de design</title>
+    <link rel="stylesheet" href="./global_assets/fonts/LineIcons/font-css/LineIcons.css">
+    <link rel="stylesheet" href="./master.css">
+    <title>Tonny Design</title>
 </head>
 <body>
     <main>
         <nav>
-            <img src="./global_assets/images/bg.jpg" alt="Background" class="bg-nav">
-            <div class="container">
-                <div class="info-g bloc">
-                    <img src="./global_assets/images/tonnyPS.jpg" alt="HERISON Tonny" class="profil-img">
-                    <p class="name">
-                        <span>H</span><span>E</span><span>R</span><span>I</span><span>S</span><span>O</span><span>N</span>
-                        <span>T</span><span>O</span><span>N</span><span>N</span><span>Y</span>
-                    </p>
-                    <p class="job">Web Developer</p>
-                </div>
-                
-                <div class="contacts bloc">
-                    <h4 class="bloc-title">Contact</h4>
-                    <ul class="contact-list">
-                        <li class="contact-item">hartonnyjack@gmail.com</li>
-                        <li class="contact-item">+261 34 78 330 78</li>
-                        <li class="contact-item">+261 34 27 764 90</li>
-                    </ul>
-                </div>
-
-                <div class="projects bloc">
-                    <h4 class="bloc-title">Projets</h4>
-                    <ul class="project-list">
-                        <li class="project-item">
-                            <span class="bordering"></span>
-                            <span class="bordering"></span>
-                            <span class="bordering"></span>
-                            <span class="bordering"></span>
-                            <span class="item-content">
-                                <span href="#">Flat Design</span>
-                                <ul class="collapsed-list">
-                                </ul>
+            <span class="logo">T<span class="o">o</span>n<span class="n">n</span>y</span>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropdown-link">Flat</a>
+                    <div class="dropdown-body">
+                        <img src="./global_assets/images/work-in-progress.png" class="work-in-progress" alt="Work in progress" />
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-link">Minimalist</a>
+                    <div class="dropdown-body">
+                        <img src="./global_assets/images/work-in-progress.png" class="work-in-progress" alt="Work in progress" />
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-link">Material</a>
+                    <div class="dropdown-body">
+                        <img src="./global_assets/images/work-in-progress.png" class="work-in-progress" alt="Work in progress" />
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-link">Neumorphism</a>
+                    <div class="dropdown-body">
+                        <a href="./Neumorphism/horloge.html" class="design-item">
+                            <span class="design-icon">
+                                <i class="lni lni-alarm-clock"></i>
                             </span>
-                        </li>
-                        <li class="project-item">
-                            <span class="bordering"></span>
-                            <span class="bordering"></span>
-                            <span class="bordering"></span>
-                            <span class="bordering"></span>
-                            <span class="item-content">
-                                <span href="#">Material Design</span>
-                                <ul class="collapsed-list">
-                                    <li>
-                                        <a href="./Material/horloge.html">Horloge</a>
-                                    </li>
-                                </ul>
+                            <span class="design-title">Clock</span>
+                        </a>
+                        <a href="./Neumorphism/horloge.html" class="design-item">
+                            <span class="design-icon">
+                                <i class="lni lni-postcard"></i>
                             </span>
-                        </li>
-                        <li class="project-item">
-                            <span class="bordering"></span>
-                            <span class="bordering"></span>
-                            <span class="bordering"></span>
-                            <span class="bordering"></span>
-                            <span class="item-content">
-                                <span href="#">Neumorphism</span>
-                                <ul class="collapsed-list">
-                                    <li>
-                                        <a href="./Neumorphism/horloge.html">Horloge</a>
-                                    </li>
-                                </ul>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="credits bloc">
-                    <h4 class="bloc-title">Credits</h4>
-                    <ul class="credit-list">
-                        <li class="credit-item">
-                            Favicon provided by <a href="https://icon-icons.com" target="_blank" title="Icon-Icons">Icon-Icons</a>
-                        </li>
-                        <li class="credit-item">
-                            Icons by <a target="_blank" href="https://lineicons.com/">LineIcons</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                            <span class="design-title">Card</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <button class="toggleMenu">
+                <i class="lni lni-menu menu-btn-icon"></i>
+            </button>
         </nav>
+        <div class="container">
+            <section>
+                <h1>Welcome !</h1>
+                <h2>You can check my design projects here</h2>
+                <h3 style="margin-bottom: 0; color: #916f6f;"># About me</h3>
+                <p style="color: #6b6b6b;">I'm Tonny, a <strong style="color: #DB4437;">fullstack web developer</strong> from Madagascar. I'm love UI & UX design so i decided to work on some projects in my spare time to improve my skills and also for fun. <br />I hope you appreciate the small works, I leave you my contacts for comments or maybe for other subjects 😎.</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/tonyjack.herison" data-link="facebook" target="_blank" style="color: #3b5998;">
+                            <span>Facebook</span><i class="lni lni-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/tonny-jacklin-herison-71429a157/" data-link="linkedin" target="_blank" style="color: #0e76a8;"> 
+                            <span>Linkedin</span><i class="lni lni-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:hartonnyjack@gmail.com" target="_blank" data-link="mail" style="color: #DB4437;"> 
+                            <span>E-mail</span><i class="lni lni-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <img src="./global_assets/images/scene-1.svg" alt="">
+            </section>
+        </div>
     </main>
+
+    <script src="./global_assets/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $("nav ul li.dropdown a.dropdown-link").click(function (e) {
+            e.preventDefault();
+            const parent = $(this).closest("li");
+            if (!parent.hasClass("open")) {
+                $("nav ul li.dropdown.open").removeClass("open");
+            }
+            parent.toggleClass("open");
+        });
+
+        $("nav button.toggleMenu").click(function (e) {
+            const toggle = $("nav ul").toggleClass("open");
+            $("nav ul li.dropdown.open").removeClass("open");
+        });
+    </script>
 </body>
 </html>
